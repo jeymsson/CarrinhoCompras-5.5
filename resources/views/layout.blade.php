@@ -35,12 +35,10 @@
 							<a class="dropdown-button" href="#!" data-activates="dropdown-user">
 								Olá {{ Auth::user()->name }}!<i class="material-icons right">arrow_drop_down</i>
 							</a>
-							<ul id="dropdown-user" data-activates="dropdown-content">
-								<li>
-									<a href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sair
-									</a>
-								</li>
-							</ul>
+						</li>
+						<li>
+							<a class="dropdown-button" href="{{ url('/logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sair
+							</a>
 						</li>
 					@endif
 				</ul>
