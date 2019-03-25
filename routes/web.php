@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index')->name('index');
 Route::get('/produto/{id}', 'HomeController@produto')->name('produto');
+Route::get('/cadastrarProduto', 'Admin\ProdutoController@adicionar')->name('produto');
 
 // Rotas do Admin
 Route::group(['prefix' => 'admin'], function(){

@@ -14,6 +14,8 @@ php artisan make:model models/Pedido -m
 php artisan make:model models/PedidoProduto -m
 php artisan migrate
 php artisan make:controller Admin/CarrinhoController
+php artisan make:controller Admin/Cupom
+php artisan make:controller Admin/CupomController
 
 
 

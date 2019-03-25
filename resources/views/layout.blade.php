@@ -44,6 +44,7 @@
 				</ul>
 			</div>
 		</nav>
+		<a href="{{ url('/cadastrarProduto') }}" >Cad</a>
 	</header>
 	<main>
 		@yield('pagina_conteudo')
