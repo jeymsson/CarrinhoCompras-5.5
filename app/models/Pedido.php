@@ -2,10 +2,15 @@
 
 namespace App\models;
 
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
 class Pedido extends Model
 {
-	protected $table = 'cad_pedido';
+	use Notifiable;
     //
+	protected $table = 'cad_pedido';
+	public	  $timestamps = true;
+	protected $fillable = ['id', 'user_id', 'status' ];
+	protected $hidde 	= [''];
 }
